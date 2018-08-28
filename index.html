@@ -642,7 +642,7 @@
         <div class="col-sm-12">
           <div class="about">
             <h4 id="footer-h4">Bragger contract address:</h4>
-            <h4 id="footer-h4"> <a href="https://etherscan.io/address/0xfce43251e6deeba84f9b736b3b18cf4e37438162">0xfce43251e6deeba84f9b736b3b18cf4e37438162</a></h4>
+            <h4 id="footer-h4"> <a href="https://etherscan.io/address/0xa93da2147eabb1e517cc17d2d7f6bfa7f15ee389">0xa93da2147eabb1e517cc17d2d7f6bfa7f15ee389</a></h4>
           </div>
         </div>
       </div>
@@ -685,7 +685,6 @@
       <div id="div-forms">
 
         <!-- Begin # Login Form -->
-        <!-- Begin # Login Form -->
         <form id="login-form">
           <div class="modal-body">
             <div id="div-login-msg">
@@ -693,7 +692,12 @@
               <label id="text-login-msg">Address</label>
             </div>
             <br>
-            <input id="login_username" class="form-control" type="text" placeholder="Amount of Ether you want to brag with." required>
+            <lavel> Amount in Wei: </label>
+            <input id="login_username" class="form-control" type="text" onkeyup="App.calculateEther()" placeholder="Amount of Ether you want to brag with." required>
+            <br>
+            <lavel> Amount in Ether: </label>
+              <br>
+            <label id="ether_value">0 Ether</label>
           </div>
           <div class="modal-footer">
             <div>
